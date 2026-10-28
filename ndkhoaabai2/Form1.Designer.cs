@@ -35,6 +35,8 @@
             label1 = new Label();
             label2 = new Label();
             label3 = new Label();
+            label4 = new Label();
+            txtHoTen = new TextBox();
             SuspendLayout();
             // 
             // mtxtPhone
@@ -69,7 +71,7 @@
             btnRegister.Name = "btnRegister";
             btnRegister.Size = new Size(94, 29);
             btnRegister.TabIndex = 3;
-            btnRegister.Text = "Đăng nhập";
+            btnRegister.Text = "Đăng Ký";
             btnRegister.UseVisualStyleBackColor = true;
             btnRegister.Click += btnRegister_Click;
             // 
@@ -100,11 +102,29 @@
             label3.TabIndex = 6;
             label3.Text = "khóa học";
             // 
+            // label4
+            // 
+            label4.AutoSize = true;
+            label4.Location = new Point(130, 22);
+            label4.Name = "label4";
+            label4.Size = new Size(54, 20);
+            label4.TabIndex = 7;
+            label4.Text = "Họ tên";
+            // 
+            // txtHoTen
+            // 
+            txtHoTen.Location = new Point(262, 20);
+            txtHoTen.Name = "txtHoTen";
+            txtHoTen.Size = new Size(125, 27);
+            txtHoTen.TabIndex = 8;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(txtHoTen);
+            Controls.Add(label4);
             Controls.Add(label3);
             Controls.Add(label2);
             Controls.Add(label1);
@@ -128,5 +148,7 @@
         private Label label1;
         private Label label2;
         private Label label3;
+        private Label label4;
+        private TextBox txtHoTen;
     }
 }
